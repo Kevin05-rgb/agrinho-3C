@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech Precision | O Futuro da Agricultura Inteligente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Acessibilidade">
+        <div class="container accessibility-container">
+            <button id="btn-contrast" class="access-btn" aria-label="Alternar Alto Contraste">Alto Contraste</button>
+            <div class="font-controls">
+                <button id="btn-font-dec" class="access-btn" aria-label="Diminuir Fonte">A-</button>
+                <button id="btn-font-inc" class="access-btn" aria-label="Aumentar Fonte">A+</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">Agro<span>Tech</span></div>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <a href="#features">Tecnologia</a>
+                <a href="#dashboard">Painel Ao Vivo</a>
+                <a href="#faq">Dúvidas</a>
+            </nav>
+            <a href="#dashboard" class="btn btn-primary">Testar Painel</a>
+        </div>
+    </</header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Agricultura de Precisão 4.0</span>
+                    <h1>Maximize sua colheita com dados em tempo real</h1>
+                    <p>Conecte seu solo ao céu. Nossa plataforma unifica previsão climática hiperlocal, calendário agrícola inteligente e análise de dados para transformar suas decisões no campo em lucro previsível.</p>
+                    <div class="hero-actions">
+                        <a href="#dashboard" class="btn btn-primary">Acessar Demonstração</a>
+                        <a href="#features" class="btn btn-secondary">Conhecer Tecnologia</a>
+                    </div>
+                </div>
+                <div class="hero-image-placeholder">
+                    <div class="dashboard-preview">
+                        <div class="preview-header">
+                            <div class="preview-dot"></div>
+                            <div class="preview-dot"></div>
+                            <div class="preview-dot"></div>
+                        </div>
+                        <div class="preview-body">
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                            <div class="preview-grid-mock">
+                                <div class="mock-block"></div>
+                                <div class="mock-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Central de Inteligência Agrícola</h2>
+                    <p>Interaja com o nosso ecossistema de dados simulados. Veja como a combinação de datas, clima e planejamento automatiza o manejo da sua lavoura.</p>
+                </div>
+
+                <div class="dashboard-wrapper">
+                    <div class="db-sidebar">
+                        <div class="db-card header-card">
+                            <div class="date-time-box">
+                                <span class="label">Data do Sistema</span>
+                                <div id="current-date" class="highlight-val">--/--/----</div>
+                                <span id="current-day-name" class="sub-label">...</span>
+                            </div>
+                        </div>
+
+                        <div class="db-card weather-card">
+                            <span class="label">Monitoramento Climático</span>
+                            <div class="weather-info">
+                                <div class="weather-main">
+                                    <span id="weather-temp" class="temp-val">--°C</span>
+                                    <span id="weather-desc" class="weather-condition">Carregando...</span>
+                                </div>
+                                <div class="weather-details">
+                                    <div class="w-detail">⚡ Umidade: <span id="weather-humidity">--%</span></div>
+                                    <div class="w-detail">💨 Vento: <span id="weather-wind">-- km/h</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="db-main-content">
+                        <div class="db-card calendar-card">
+                            <div class="calendar-header">
+                                <h3>Calendário de Manejo Inteligente</h3>
+                                <div class="calendar-controls">
+                                    <button id="btn-prev-month" class="btn-arrow" aria-label="Mês Anterior">&lt;</button>
+                                    <span id="calendar-month-year" class="month-title">Mês Ano</span>
+                                    <button id="btn-next-month" class="btn-arrow" aria-label="Próximo Mês">&gt;</button>
+                                </div>
+                            </div>
+
+                            <div class="calendar-grid-labels">
+                                <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+                            </div>
+                            <div id="calendar-days" class="calendar-days-grid">
+                                </div>
+                        </div>
+
+                        <div class="db-card events-card">
+                            <h3>Ações Recomendadas para o Dia</h3>
+                            <div id="event-details-container">
+                                <p class="placeholder-text">Selecione um dia no calendário para visualizar os manejos e alertas climáticos específicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Por que escolher a AgroTech?</h2>
+                    <p>Unimos engenharia de software avançada com ciência agronômica de ponta.</p>
+                </div>
+                <div id="carousel-container" class="carousel-wrapper">
+                    </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Perguntas Frequentes</h2>
+                    <p>Tudo o que você precisa saber sobre a integração da tecnologia na sua fazenda.</p>
+                </div>
+                <div id="accordion-container" class="accordion-wrapper">
+                    </div>
+            </div>
+        </section>
+
+        <section class="cta-final">
+            <div class="container cta-container">
+                <h2>Pronto para digitalizar sua operação agrícola?</h2>
+                <p>Junte-se a mais de 4.500 produtores que aumentaram sua produtividade em até 32% no último ano.</p>
+                <a href="#dashboard" class="btn btn-primary size-lg">Falar com Especialista</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 AgroTech Precision. Todos os direitos reservados. Produtividade Inteligente e Sustentável.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
